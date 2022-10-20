@@ -3,7 +3,6 @@ function App() {
   return (
     <Wrapper>
       <GlobalStyle />
-      Hello
     </Wrapper>
   );
 }

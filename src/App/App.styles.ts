@@ -19,4 +19,7 @@ export const Wrapper = styled.div`
   width: 80%;
   align-items: center;
   margin-left: 10%;
+  @media only screen and (max-width: 900px) {
+    margin-left: 0;
+  }
 `;
