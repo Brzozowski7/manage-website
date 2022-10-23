@@ -12,6 +12,7 @@ body{
 `;
 
 export const Wrapper = styled.div`
+  margin: auto;
   display: flex;
   flex-direction: column;
   width: 80vw;
