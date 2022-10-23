@@ -8,18 +8,15 @@ export const GlobalStyle = createGlobalStyle`
 }
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    width:100vw;
-    height:100vh;
 }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  align-items: center;
-  margin-left: 10%;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
   @media only screen and (max-width: 900px) {
-    margin-left: 0;
+    width: 100vw;
   }
 `;
