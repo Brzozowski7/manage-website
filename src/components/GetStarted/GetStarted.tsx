@@ -1,9 +1,9 @@
 import { GetStartedWrapper } from "./GetStarted.styles";
 
-interface GetStartedBtnProps {
+interface GetStartedProps {
   mobileDisplay: boolean;
 }
 
-export default function GetStartedBtn({ mobileDisplay }: GetStartedBtnProps) {
+export default function GetStarted({ mobileDisplay }: GetStartedProps) {
   return <GetStartedWrapper mobileDisplay={mobileDisplay}>Get Started</GetStartedWrapper>;
 }

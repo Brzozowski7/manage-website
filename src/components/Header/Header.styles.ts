@@ -18,7 +18,7 @@ export const Logo = styled.img`
   }
 `;
 
-export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+export const BurgerMenu = styled(FontAwesomeIcon)`
   display: none;
   @media only screen and (max-width: 900px) {
     display: inline-block;

@@ -1,7 +1,7 @@
-import { MenuWrapper, MenuItem } from "./Menu.styles";
-import { menuItems } from "./Menu.const";
+import { MenuWrapper, MenuItem } from "./NavbarMenu.styles";
+import { menuItems } from "./NavbarMenu.const";
 
-export default function Menu() {
+export default function NavbarMenu() {
   return (
     <MenuWrapper>
       {menuItems.map((item) => (
