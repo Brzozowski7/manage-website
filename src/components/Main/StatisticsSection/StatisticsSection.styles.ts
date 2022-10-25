@@ -6,9 +6,9 @@ export const SectionWrapper = styled.section`
   height: 525px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   @media only screen and (max-width: 900px) {
     flex-direction: column-reverse;
+    align-items: center;
     height: auto;
   }
 `;
@@ -26,21 +26,12 @@ export const DescriptivePart = styled.div`
   }
 `;
 
-export const GraphsPart = styled.div`
+export const GraphsImage = styled.img`
   width: 50%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   @media only screen and (max-width: 900px) {
     width: 100%;
   }
-`;
-
-export const GraphsImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 `;
 
 export const Heading = styled.h1`

@@ -2,10 +2,9 @@ import GetStarted from "../../GetStarted";
 import {
   SectionWrapper,
   DescriptivePart,
-  GraphsPart,
   Heading,
   Description,
-  GraphsImage
+  GraphsImage,
 } from "./StatisticsSection.styles";
 import graphsSVG from "../../../images/illustration-intro.svg";
 
@@ -20,9 +19,7 @@ export default function StatisticsSection() {
         </Description>
         <GetStarted mobileDisplay={true} />
       </DescriptivePart>
-      <GraphsPart>
-        <GraphsImage src={graphsSVG} alt="graphs" />
-      </GraphsPart>
+      <GraphsImage src={graphsSVG} alt="graphs" />
     </SectionWrapper>
   );
 }
