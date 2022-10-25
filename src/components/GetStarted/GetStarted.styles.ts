@@ -4,6 +4,7 @@ import { pallete } from "../../misc/pallete";
 export const GetStartedWrapper = styled.div<{ mobileDisplay: boolean }>`
   background-color: ${pallete.BrightRed};
   color: ${pallete.VeryLightGray};
+  width: 112px;
   font-weight: 700;
   padding: 12px 20px;
   border-radius: 20px;
