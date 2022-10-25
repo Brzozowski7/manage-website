@@ -1,5 +1,16 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { HeaderWrapper, Logo, BurgerMenu } from "./Header.styles";
+import NavbarMenu from "./Menu";
+import GetStarted from "../GetStarted";
+import logoSVG from "../../images/logo.svg";
+
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <HeaderWrapper>
+      <Logo src={logoSVG} alt="logo" />
+      <NavbarMenu />
+      <GetStarted mobileDisplay={false} />
+      <BurgerMenu icon={faBars} />
+    </HeaderWrapper>
+  );
 }
