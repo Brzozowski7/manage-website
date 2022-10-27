@@ -1,6 +1,10 @@
+import { MainWrapper } from "./Main.styles";
+import StatisticsSection from "./StatisticsSection";
 
 export default function Main() {
   return (
-    <div>Main</div>
-  )
+    <MainWrapper>
+      <StatisticsSection />
+    </MainWrapper>
+  );
 }
