@@ -17,7 +17,7 @@ export default function StatisticsSection() {
           Manage makes it simple for software teams to play day-to-day tasks
           while keeping the larger team goals in view.
         </Description>
-        <GetStarted mobileDisplay={true} />
+        <GetStarted mobileDisplay />
       </DescriptivePart>
       <GraphsImage src={graphsSVG} alt="graphs" />
     </SectionWrapper>
