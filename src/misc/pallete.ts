@@ -3,6 +3,6 @@ export const pallete = {
   DarkBlue: "hsl(228, 39%, 23%)",
   DarkGrayishBlue: " hsl(227, 12%, 61%)",
   VeryDarkBlue: "hsl(233, 12%, 13%)",
-  VeryPaleRed: "hsl(13, 95%, 70%)",
+  VeryPaleRed: "hsl(13, 95%, 90%)",
   VeryLightGray: " hsl(0, 0%, 98%)",
 };
