@@ -10,7 +10,7 @@ export const SectionWrapper = styled.section`
   justify-content: space-between;
   width: 100vw;
   height: 100px;
-  padding: 0 20vw;
+  padding: 0 10vw;
   @media only screen and (max-width: 900px) {
     height: auto;
     flex-direction: column;
