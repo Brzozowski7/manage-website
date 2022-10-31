@@ -5,7 +5,6 @@ import {
   PaginationDot,
   Inner,
   PaginationDotsWrapper,
-  
 } from "./Carousel.styles";
 
 interface CarouselProps {
@@ -49,7 +48,7 @@ export default function Carousel({ children, toShow }: CarouselProps) {
       {toShow === 1 && (
         <PaginationDotsWrapper>
           {React.Children.map(children, (child, index) => {
-            return <PaginationDot active={index === activeIndex} />;
+            return <PaginationDot key={index} active={index === activeIndex} />;
           })}
         </PaginationDotsWrapper>
       )}
