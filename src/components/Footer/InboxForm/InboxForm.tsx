@@ -28,6 +28,7 @@ export default function InboxForm() {
           onChange={(e) => setEmail(e.target.value)}
           type="text"
           placeholder="Updates in your inbox..."
+          value={email}
         />
         <GoButton>Go</GoButton>
       </Form>
