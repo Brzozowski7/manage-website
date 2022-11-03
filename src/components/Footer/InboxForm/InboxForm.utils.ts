@@ -1,8 +1,2 @@
 import { emailRegex } from "./InboxForm.const";
-export const checkEmail = (email: string) => {
-  if (email.match(emailRegex)) {
-    return true;
-  } else {
-    return false;
-  }
-};
+export const checkEmail = (email: string) => email.match(emailRegex);

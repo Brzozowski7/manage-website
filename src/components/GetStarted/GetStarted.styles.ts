@@ -3,7 +3,7 @@ import { pallete } from "../../misc/pallete";
 
 export const GetStartedWrapper = styled.div<{
   mobileDisplay: boolean;
-  theme: string;
+  theme: "orange" | "white";
 }>`
   background-color: ${(props) =>
     props.theme === "orange" ? pallete.BrightRed : pallete.VeryLightGray};
