@@ -10,6 +10,7 @@ import {
   OpinionText,
 } from "./OpinionsSection.styles";
 import useScreenWidth from "./useScreenWidth";
+import GetStarted from "../../GetStarted";
 
 export default function OpinionsSection() {
   const { ammountToShow } = useScreenWidth();
@@ -32,6 +33,7 @@ export default function OpinionsSection() {
           );
         })}
       </Carousel>
+      <GetStarted mobileDisplay />
     </SectionWrapper>
   );
 }
