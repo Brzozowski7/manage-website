@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Carousel from "./Carousel";
 import CarouselItem from "./CarouselItem";
 import { opinions } from "./OpinionsSection.const";
@@ -9,11 +10,20 @@ import {
   UserName,
   OpinionText,
 } from "./OpinionsSection.styles";
-import useScreenWidth from "./useScreenWidth";
+import useScreenWidth from "../../../hooks/useScreenWidth";
 import GetStarted from "../../GetStarted";
 
 export default function OpinionsSection() {
-  const { ammountToShow } = useScreenWidth();
+  const { isMobile } = useScreenWidth();
+  const [ammountToShow, setAmmountToShow] = useState(3);
+
+  useEffect(() => {
+    if (isMobile) {
+      setAmmountToShow(1);
+    } else {
+      setAmmountToShow(3);
+    }
+  }, [isMobile]);
 
   return (
     <SectionWrapper>

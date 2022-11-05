@@ -20,8 +20,9 @@ export const Logo = styled.img`
   }
 `;
 
-export const BurgerMenu = styled(FontAwesomeIcon)`
+export const MenuIcon = styled(FontAwesomeIcon)`
   display: none;
+  z-index: 5;
   @media only screen and (max-width: 900px) {
     display: inline-block;
   }

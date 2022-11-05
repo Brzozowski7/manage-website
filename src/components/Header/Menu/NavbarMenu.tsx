@@ -1,9 +1,13 @@
 import { MenuWrapper, MenuItem } from "./NavbarMenu.styles";
 import { menuItems } from "./NavbarMenu.const";
 
-export default function NavbarMenu() {
+interface NavbarMenuProps {
+  isMenuActive: boolean;
+}
+
+export default function NavbarMenu({ isMenuActive }: NavbarMenuProps) {
   return (
-    <MenuWrapper>
+    <MenuWrapper isMenuActive={isMenuActive}>
       {menuItems.map((item) => (
         <MenuItem key={item.id}>{item.text}</MenuItem>
       ))}
